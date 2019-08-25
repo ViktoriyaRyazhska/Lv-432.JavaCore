@@ -2,6 +2,8 @@ package com.company;
 
 import java.io.BufferedReader;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Car {
     private String type;
@@ -50,15 +52,16 @@ public class Car {
                 '}';
     }
 
-    public static Car getCarByYear(Car[] arr, BufferedReader br) throws IOException {
+    public static List<Car> getCarByYear(Car[] arr, BufferedReader br) throws IOException {
         System.out.println("Print year of production: ");
+        List<Car> cars = new ArrayList<>();
         int yearOfProduction = Integer.parseInt(br.readLine());
         for (Car car : arr) {
             if (car.getYearOfProduction() == yearOfProduction) {
-                return car;
+                cars.add(car);
             }
         }
-        return null;
+        return cars;
     }
 
     public static Car[] sortByYearOfProduction(Car[] arr) {
