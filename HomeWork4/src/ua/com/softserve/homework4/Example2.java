@@ -20,18 +20,37 @@ public class Example2 {
         }
         System.out.println();
 
-        int resault = 0;
-        for (int i = 0; i < numbers.length / 2; i++) {
-            if (numbers[i] > 0) {
-                resault = numbers[0] + numbers[1] + numbers[2] + numbers[3] + numbers[4];  // Такий код архітектурно неправильний, а якщо кількість буде змінюватися
-            } else {
-                for (int j = 5; i < numbers.length; i++) {
-                    resault = numbers[5] * numbers[6] * numbers[7] * numbers[8] * numbers[9];
-                }
-            }
-            System.out.println(resault);
+        boolean calcSum = isCalcSum(numbers);
+        if (calcSum) {
+            System.out.println("Sum = " + calcSum(numbers));
+        } else {
+            System.out.println("Product = " + calcProduct(numbers));
         }
     }
+
+    private static int calcProduct(int[] numbers) {
+        int result = 1;
+        for (int i = 5; i < 10; i++) {
+            result *= numbers[i];
+        }
+        return result;
+    }
+
+    private static int calcSum(int[] numbers) {
+        int result = 0;
+        for (int i = 0; i < 5; i++) {
+            result += numbers[i];
+        }
+        return result;
+    }
+
+    private static boolean isCalcSum(int[] numbers) {
+        for (int i = 0; i < 5; i++) {
+            if (numbers[i] < 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+
 }
-
-

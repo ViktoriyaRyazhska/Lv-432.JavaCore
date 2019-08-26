@@ -1,11 +1,7 @@
 package ua.com.softserve.homework4;
 
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
-
 public class Car {
 
-    BufferedReader bf = new BufferedReader(new InputStreamReader(System.in)); // відкривати у методі
     String name;
     String type;
     int yearOfProduct;
@@ -29,7 +25,7 @@ public class Car {
     @Override
     public String toString() {
         return "Car{" +
-                ", name='" + name + '\'' +
+                "  name='" + name + '\'' +
                 ", type='" + type + '\'' +
                 ", yearOfProduct=" + yearOfProduct +
                 ", engineCapacity=" + engineCapacity +
