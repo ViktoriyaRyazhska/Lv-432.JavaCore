@@ -3,7 +3,7 @@ package ua.com.softserve.homework3;
 public class Main {
     public static void main(String[] args) {
 
-        Dog dog1 = new Dog("Volt", Breed.CHIHUAHUA, 18);
+        Dog dog1 = new Dog("Volt", Breed.CHIHUAHUA, 1);
         Dog dog2 = new Dog("Rex", Breed.DOBERMAN, 7);
         Dog dog3 = new Dog("Tuzik", Breed.ROTTWEILER, 4);
         Dog oldestDog = null;
