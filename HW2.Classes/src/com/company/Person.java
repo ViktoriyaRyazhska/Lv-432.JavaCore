@@ -6,6 +6,9 @@ import java.io.InputStreamReader;
 import java.time.LocalDate;
 import java.time.Year;
 
+import static com.company.Util.safeParseInt;
+import static com.company.Util.safeReadLine;
+
 public class Person {
     private int birthYear;
     private String firstName;
@@ -50,13 +53,13 @@ public class Person {
     public void input(BufferedReader bf) throws IOException {
 
         System.out.print("Person first name = ");
-        this.firstName = bf.readLine();
+        this.firstName = safeReadLine(bf);
 
         System.out.print("Person last name = ");
-        this.lastName = bf.readLine();
+        this.lastName = safeReadLine(bf);
 
         System.out.print("Person birthday year = ");
-        this.birthYear = Integer.parseInt(bf.readLine());
+        this.birthYear = safeParseInt(safeReadLine(bf));
 
     }
 
