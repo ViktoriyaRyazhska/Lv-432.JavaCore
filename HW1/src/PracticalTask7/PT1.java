@@ -2,6 +2,7 @@ package PracticalTask7;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Random;
 public class PT1  {
@@ -25,7 +26,7 @@ public class PT1  {
 //			}
 //		}
 //		System.out.println(myCollection5.toString());
-		int[] iarry = {20,21,22,15,7,-22,50,25,21,20};
+		int[] iarry = {20,11,22,15,7,-22,50,25,21,20};
 		for (int i : iarry) {			
 			myCollection.add(i);
 		}
@@ -37,10 +38,17 @@ public class PT1  {
 				myCollectionGreater20.add(integer);				
 			}
 		}
+		Iterator<Integer> iterator = myCollection.iterator();
+		while (iterator.hasNext()) {
+			if(iterator.next() <=20) {
+				iterator.remove();
+			}
+		}
 		int counter = 0;
 		while(counter < myCollection.size()) {
 			if (myCollection.get(counter) <= 20) {
 				myCollection.remove(counter);
+				counter--;
 			}
 			counter++;
 		}
