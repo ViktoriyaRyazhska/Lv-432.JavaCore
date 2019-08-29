@@ -1,5 +1,7 @@
 package com.company.part2;
 
+import com.sun.istack.internal.NotNull;
+
 public class ContractEmployee extends Employee implements Salaryable {
     private double hourlyRate;
     private int hoursWorked;
@@ -23,7 +25,7 @@ public class ContractEmployee extends Employee implements Salaryable {
 
     @Override
     public double calculatePay() {
-        return  hourlyRate * hoursWorked;
+        return hourlyRate * hoursWorked;
     }
 
     @Override

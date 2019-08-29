@@ -22,7 +22,7 @@ public class SalariedEmployee extends Employee implements Salaryable {
 
     @Override
     public double calculatePay() {
-        return   fixedMonthlyPayment;
+        return fixedMonthlyPayment;
     }
 
     @Override

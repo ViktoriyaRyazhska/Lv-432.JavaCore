@@ -36,7 +36,9 @@ public class Task4 {
     private static void printCars(Car[] cars) {
         for (Car car : cars
         ) {
-            System.out.println(car.toString());
+            if (car != null) {
+                System.out.println(car);
+            }
         }
     }
 

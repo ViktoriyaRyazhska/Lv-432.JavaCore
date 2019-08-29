@@ -1,6 +1,5 @@
 package com.company;
 
-import javax.naming.OperationNotSupportedException;
 import java.io.BufferedReader;
 
 import static com.company.Util.safeParseInt;
