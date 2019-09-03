@@ -6,39 +6,53 @@ import java.io.InputStreamReader;
 
 public class Main {
 
-    public static void main(String[] args) throws IOException {
-        // write your code here
+    public static void main(String[] args) {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        String sentence;
-        StringBuilder str = new StringBuilder();
+        Double one, two;
 
-        System.out.println("Print sentence with 5 words. Split words by space.");
-        sentence = br.readLine();
-        String[] words = sentence.split(" ");
-        getLongestWord(words);
-        reverseString(words, str);
 
-        System.out.println("Print sentence with more than one space between words: ");
-        sentence = br.readLine();
-        System.out.println(sentence.replaceAll("\\s+", " "));
-
-        System.out.println("Print number like xx.xx+ ");
-        String pattern = "$%.2f";
-        Double d = Double.parseDouble(br.readLine());
-        System.out.printf(pattern, d);
-    }
-
-    private static void getLongestWord(String[] words) {
-        String res = "";
-        for (String word : words) {
-            if (word.length() > res.length()) {
-                res = word;
-            }
+        try {
+            System.out.println("Print first double number: ");
+            one = Double.parseDouble(br.readLine());
+            System.out.println("Print second double number: ");
+            two = Double.parseDouble(br.readLine());
+            div(one, two);
+        } catch (ArithmeticException | IOException e) {
+            System.out.println(e.getMessage());
         }
-        System.out.println("Longest word is: " + res + " with " + res.length() + " chars");
+
+        try {
+            readNumber(0, 20, 1, br);
+        } catch (IllegalArgumentException | IOException e) {
+            System.out.println(e.getMessage());
+        }
+
+        System.out.println("10 numbers.");
+
+        try {
+            readNumber(1, 100, 10, br);
+        } catch (IllegalArgumentException | IOException e) {
+            System.out.println(e.getMessage());
+        }
     }
 
-    private static void reverseString(String[] words, StringBuilder str) {
-        System.out.println(str.append(words[1]).reverse().toString());
+    public static void div(Double one, Double two) {
+        if (one <= 0 || two <= 0) {
+            throw new ArithmeticException("Cant divide by zero");
+        }
+        System.out.println(one / two);
+    }
+
+    public static void readNumber(int start, int end, int count, BufferedReader br) throws IOException {
+        int tmp = 0;
+        for (int j = 0; j < count; j++) {
+            System.out.println("Write number: " + (j + 1));
+            int i = Integer.parseInt(br.readLine());
+            if (!(i <= end && i >= start) || (i <= tmp)) {
+                throw new IllegalArgumentException("Invalid number");
+            }
+            tmp = i;
+        }
+        System.out.println("Everything is ok");
     }
 }

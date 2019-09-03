@@ -1,58 +1,52 @@
 package com.company;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-
 public class Main {
+    public static final Object monitor = new Object();
+    public static final Object monitor2 = new Object();
 
-    public static void main(String[] args) {
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        Double one, two;
+    public static void main(String[] args) throws InterruptedException {
+        Thread t1 = new Thread(new MyRunnable("Message 1"));
+        Thread t2 = new Thread(new MyRunnable("Message 2"));
+        Thread t3 = new Thread(new MyRunnable("Message 3"));
+//        Thread deadLock1 = new Thread(new DeadlockDemo());
+//        Thread deadLock2 = new Thread(new DeadlockDemo2());
+        Thread t4 = new Thread(new One());
 
+//        t1.start();
+//        t1.join();
+//        t2.start();
+//        t2.join();
+//        t3.start();
 
-        try {
-            System.out.println("Print first double number: ");
-            one = Double.parseDouble(br.readLine());
-            System.out.println("Print second double number: ");
-            two = Double.parseDouble(br.readLine());
-            div(one, two);
-        } catch (ArithmeticException | IOException e) {
-            System.out.println(e.getMessage());
-        }
+        t4.start();
 
-        try {
-            readNumber(0, 20, 1, br);
-        } catch (IllegalArgumentException | IOException e) {
-            System.out.println(e.getMessage());
-        }
+//        deadLock1.start();
+//        deadLock2.start();
+    }
 
-        System.out.println("10 numbers.");
-
-        try {
-            readNumber(1, 100, 10, br);
-        } catch (IllegalArgumentException | IOException e) {
-            System.out.println(e.getMessage());
+    private static class One implements Runnable {
+        @Override
+        public void run() {
+            new Thread(new Two()).start();
         }
     }
 
-    public static void div(Double one, Double two) {
-        if (one <= 0 || two <= 0) {
-            throw new ArithmeticException("Cant divide by zero");
-        }
-        System.out.println(one / two);
-    }
-
-    public static void readNumber(int start, int end, int count, BufferedReader br) throws IOException {
-        int tmp = 0;
-        for (int j = 0; j < count; j++) {
-            System.out.println("Write number: " + (j + 1));
-            int i = Integer.parseInt(br.readLine());
-            if (!(i <= end && i >= start) || (i <= tmp)) {
-                throw new IllegalArgumentException("Invalid number");
+    private static class Two implements Runnable {
+        @Override
+        public void run() {
+            for (int i = 0; i < 3; i++) {
+                System.out.println("Thread number two");
             }
-            tmp = i;
+            new Thread(new Three()).start();
         }
-        System.out.println("Everything is ok");
+    }
+
+    private static class Three implements Runnable {
+        @Override
+        public void run() {
+            for (int i = 0; i < 5; i++) {
+                System.out.println("Thread number three");
+            }
+        }
     }
 }

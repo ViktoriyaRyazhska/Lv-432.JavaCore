@@ -7,23 +7,57 @@ import java.io.InputStreamReader;
 public class Main {
 
     public static void main(String[] args) throws IOException {
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        Person p1 = new Person("One", "One", 1994);
-        Person p2 = new Person("Two", "Two", 1973);
-        Person p3 = new Person("Three", "Three", 1786);
-        Person p4 = new Person("Four", "Four", 2000);
-        Person p5 = new Person();
+//        Float f1 = -4.0f;
+//        Float f2 = -5.1f;
+//        Float f3 = 4.2f;
+//        System.out.println(range(f1));
+//        System.out.println(range(f2));
+//        System.out.println(range(f3));
+//        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+//
+//        System.out.println("Print first number: ");
+//        int one = Integer.parseInt(br.readLine());
+//        System.out.println("Print second number: ");
+//        int two = Integer.parseInt(br.readLine());
+//        System.out.println("Print third number: ");
+//        int three = Integer.parseInt(br.readLine());
+//        System.out.println("Max number is: " + maxValue(maxValue(one, two), three));
+//        System.out.println("Min number is: " + minValue(minValue(one, two), three));
+//
+//        System.out.println("Print error number: ");
+//        System.out.println("Error is: " + HTTPError.getErrorName(Integer.parseInt(br.readLine())));
+        Dog dog1 = new Dog();
+        Dog dog2 = new Dog();
+        Dog dog3 = new Dog();
 
-        System.out.println(p5.outputInformation());
-        p5.inputInformation(br);
-        System.out.println(p5.outputInformation());
-        System.out.println(p4.getAge());
-        System.out.println(p3.getAge());
-        System.out.println(p3.outputInformation());
+        dog1.setAge(10);
+        dog1.setBreed(Dog.Breed.Akita.toString());
+        dog1.setName("Doggy");
 
-        p4.setBirthYear(2001);
-        p3.changeName("Threee", "Threee");
-        System.out.println(p4.getAge());
-        System.out.println(p3.outputInformation());
+        dog2.setAge(9);
+        dog2.setBreed(Dog.Breed.Boxer.toString());
+        dog2.setName("Bob");
+
+        dog3.setAge(15);
+        dog3.setBreed(Dog.Breed.Collie.toString());
+        dog3.setName("Bob");
+
+        System.out.println("Oldest dog is: " + Dog.oldestDog(Dog.oldestDog(dog1, dog2), dog3));
+        System.out.println(Dog.checkSameName(dog2, dog1));
+    }
+
+    public static String range(Float number) {
+        if (number >= -5 && number <= 5) {
+            return number + " is on range";
+        }
+        return number + " is not on range";
+    }
+
+    public static int maxValue(int one, int two) {
+        return one > two ? one : two;
+    }
+
+    public static int minValue(int one, int two) {
+        return one < two ? one : two;
     }
 }
