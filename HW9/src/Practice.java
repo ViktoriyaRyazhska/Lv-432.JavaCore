@@ -2,7 +2,7 @@ import java.io.*;
 
 public class Practice {
     public static void main(String[] args) {
-        new Task1();
+        //new Task1();
         new Task2();
         //new Task3();
     }
@@ -28,8 +28,8 @@ class Task1{
 class Task2{
     Task2() {
         System.out.println("Task 2");
-        Runnable runnable1 = new MyRunnableTask21();
-        Runnable runnable2 = new MyRunnableTask22();
+        Runnable runnable1 = new MyRunnableTask2("Hello, world!", 2000);
+        Runnable runnable2 = new MyRunnableTask2("Peace int the peace", 3000);
 
         Thread thread1 = new Thread(runnable1);
         Thread thread2 = new Thread(runnable2);
@@ -112,29 +112,23 @@ class MyRunnableTask1 implements Runnable{
     }
 }
 
-class MyRunnableTask21 implements Runnable{
-    @Override
-    public void run() {
-        for (int i = 0; i < 5; i++) {
-            System.out.println("Hello, world");
+class MyRunnableTask2 implements Runnable{
 
-            try {
-                Thread.sleep(2000);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-        }
-        System.out.println("My name is "+Thread.currentThread().getName());
+    private String message;
+    private int millis;
+
+    MyRunnableTask2(String message, int millis) {
+        this.message = message;
+        this.millis = millis;
     }
-}
 
-class MyRunnableTask22 implements Runnable{
     @Override
     public void run() {
         for (int i = 0; i < 5; i++) {
-            System.out.println("Peace int the peace");
+            System.out.println(message);
+
             try {
-                Thread.sleep(3000);
+                Thread.sleep(millis);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
