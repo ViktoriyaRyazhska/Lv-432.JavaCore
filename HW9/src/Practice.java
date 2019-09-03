@@ -2,7 +2,7 @@ import java.io.*;
 
 public class Practice {
     public static void main(String[] args) {
-        //new Task1();
+        new Task1();
         new Task2();
         //new Task3();
     }
@@ -46,7 +46,7 @@ class Task3{
         BufferedReader reader;
         String[] text = new String[7];
         try {
-            fileReader = new FileReader("D:\\ideaproj\\HW9\\src\\mytext.txt");
+            fileReader = new FileReader("D:\\GitWork\\Lv-432.JavaCore\\HW9\\src\\mytext.txt");
             reader = new BufferedReader(fileReader);
 
             for (int i = 0; i < text.length; i++) {

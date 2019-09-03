@@ -115,7 +115,7 @@ class Task4 {
         List<String> text = new ArrayList<>();
 
         try {
-            String fileName = "D:\\ideaproj\\HW9\\src\\com\\softserve\\rybka\\hw9\\file1.txt";
+            String fileName = "D:\\GitWork\\Lv-432.JavaCore\\HW9\\src\\com\\softserve\\rybka\\hw9\\file1.txt";
             fileReader = new FileReader(fileName);
             reader = new BufferedReader(fileReader);
             String line;
@@ -130,7 +130,7 @@ class Task4 {
     }
 
     private void writeFile(String... data) {
-        String fileName = "D:\\ideaproj\\HW9\\src\\com\\softserve\\rybka\\hw9\\file2.txt";
+        String fileName = "D:\\GitWork\\Lv-432.JavaCore\\HW9\\src\\com\\softserve\\rybka\\hw9\\file2.txt";
         FileWriter fw;
         BufferedWriter bw;
         try {
