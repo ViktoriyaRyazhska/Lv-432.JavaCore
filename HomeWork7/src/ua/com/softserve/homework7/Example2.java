@@ -10,10 +10,7 @@ public class Example2 {
         System.out.println("Enter a sentence that contains the words between more than one space:");
         String word = br.readLine();
 
-        while (word.contains("  ")) {
-            String replace = word.replace("  ", " ");
-            word = replace;
-        }
-        System.out.println(word);
+        String replaceString = word.replaceAll("[\\s]{2,}", " ").trim();
+        System.out.println(replaceString);
     }
 }
