@@ -11,17 +11,15 @@ public class ImplementPatternForUS {
 	 */
 	public static void main(String[] args) {
 		//$111,111,111.00
-		String strUS = "txt $100,120.56 text $1.50 dcvvf $46,152.5000 $150.10 don't $1.125.25";		
+		String strUS = "txt $100,120.56 text $1.50 dcvvf $46,152.5000 $150.10 don't $1,125.25 $23,3,5,266.23";		
 		//Pattern currencyUS = Pattern.compile("[$](\\d?[,]?)*[\\.]\\d");
-		Pattern currencyUS = Pattern.compile("[$]((\\d{1,3}[,])*(\\d{3}[.]\\d{2}))|[$]\\d{1,3}[.]\\d{2}");
+		Pattern currencyUS = Pattern.compile("[$](\\d{1,3}[,])?(\\d{3}[,])*(\\d{3}[.]\\d{2})|[$]\\d{1,3}[.]\\d{2}");
 		Matcher matcher = currencyUS.matcher(strUS);
 		matcher.reset();
 		while (matcher.find()) {
 			System.out.println(strUS.substring(matcher.start(), matcher.end()));
 		}
-		
-		
-		
 	}
-
 }
+
+

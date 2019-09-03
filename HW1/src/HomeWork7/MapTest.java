@@ -3,6 +3,7 @@ package HomeWork7;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
+import java.util.Map.Entry;
 
 public class MapTest {
 
@@ -22,8 +23,8 @@ public class MapTest {
 			System.out.println("Last name : "+ pair.getKey() + " first name : " +pair.getValue());
 		}
 		String delete = "John";
-		for (Iterator i = mapName.entrySet().iterator(); i.hasNext();) {
-			Map.Entry entry = (Map.Entry) i.next();
+		for (Iterator<?> i = mapName.entrySet().iterator(); i.hasNext();) {
+			Map.Entry<String, String> entry = (Entry<String, String>) i.next();
 			if (entry.getValue().equals(delete)) {
 				i.remove();
 			}			

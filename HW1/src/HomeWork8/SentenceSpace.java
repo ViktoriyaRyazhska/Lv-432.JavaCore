@@ -1,8 +1,5 @@
 package HomeWork8;
 
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-
 
 
 public class SentenceSpace {
@@ -15,12 +12,13 @@ public class SentenceSpace {
 	public static void main(String[] args) {
 		String sentenceSpace = "   Returns 23   a   string    whose    value    is this  string,"
 				+ " with any   leading and    trailing    whitespace    removed. ";
-		String newSentenceSpace = "";
-		Pattern pattern = Pattern.compile("\\w*[\\S]");
-		Matcher matcher = pattern.matcher(sentenceSpace);
-		while (matcher.find()) {			
-			newSentenceSpace = newSentenceSpace +(sentenceSpace.substring(matcher.start(), matcher.end()) + " ");
-		}
+		String newSentenceSpace=sentenceSpace.replaceAll(" +", " ").trim();
+//		String newSentenceSpace = "";
+//		Pattern pattern = Pattern.compile("\\w*[\\S]");
+//		Matcher matcher = pattern.matcher(sentenceSpace);
+//		while (matcher.find()) {			
+//			newSentenceSpace = newSentenceSpace +(sentenceSpace.substring(matcher.start(), matcher.end()) + " ");
+//		}
 		System.out.println(newSentenceSpace);
 	}
 
