@@ -2,60 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f64751b-2a3f-449f-a5ef-ad263b317f45" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../HW_3/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../HW_3/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HW_3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../HW_3/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HW_3/HW_3.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HW_3/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HW_3/src/com/company/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HW_3/src/com/company/Person.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HW_4/.idea/libraries/Maven__Arquillian_JUnit_Release.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HW_4/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../HW_4/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HW_4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../HW_4/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HW_4/HW_4.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HW_4/src/com/company/Dog.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HW_4/src/com/company/DogTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HW_4/src/com/company/HTTPError.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HW_4/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HW_4/src/com/company/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HW_4/src/com/company/MainTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HW_5 additional tasks/src/com/company/Calc.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HW_5 additional tasks/src/com/company/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HW_5/.idea/description.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HW_5/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HW_5/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HW_5/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HW_5/.idea/project-template.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HW_5/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HW_5/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HW_5/HW_5.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HW_5/src/com/company/Car.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HW_5/src/com/company/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HW_6/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../HW_6/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HW_6/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HW_6/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../HW_6/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HW_6/HW_6.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HW_6/out/production/HW_6/META-INF/HW_6.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HW_6/src/com/company/PartOne/Bird.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HW_6/src/com/company/PartOne/Chicken.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HW_6/src/com/company/PartOne/Eagle.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HW_6/src/com/company/PartOne/FlyingBird.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HW_6/src/com/company/PartOne/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HW_6/src/com/company/PartOne/NonFlyingBird.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HW_6/src/com/company/PartOne/Penguin.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HW_6/src/com/company/PartOne/Swallow.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HW_6/src/com/company/PartTwo/ContractEmployee.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HW_6/src/com/company/PartTwo/Employee.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HW_6/src/com/company/PartTwo/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HW_6/src/com/company/PartTwo/SalariedEmployee.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HW_6/src/com/company/PartTwo/Salaryable.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HW_7/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../HW_7/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HW_7/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../HW_7/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HW_7/HW_7.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HW_7/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HW_7/src/com/company/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HW_7/src/com/company/Student.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HW_8.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HW_9/src/com/company/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HW_9/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HW_9/src/com/company/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -73,8 +21,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="46" column="20" selection-start-line="46" selection-start-column="20" selection-end-line="46" selection-end-column="20" />
+            <state relative-caret-position="289">
+              <caret line="20" column="44" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -105,8 +53,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane" />
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -164,16 +112,17 @@
       <workItem from="1567089614367" duration="1521000" />
       <workItem from="1567098753456" duration="106000" />
       <workItem from="1567529693891" duration="27000" />
+      <workItem from="1567688484199" duration="66000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6091000" />
+    <option name="totallyTimeSpent" value="6157000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24966443" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24966443" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -211,8 +160,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="46" column="20" selection-start-line="46" selection-start-column="20" selection-end-line="46" selection-end-column="20" />
+        <state relative-caret-position="289">
+          <caret line="20" column="44" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

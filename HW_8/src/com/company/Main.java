@@ -17,7 +17,8 @@ public class Main {
             System.out.println("Print second double number: ");
             two = Double.parseDouble(br.readLine());
             div(one, two);
-        } catch (ArithmeticException | IOException e) {
+        } catch (ArithmeticException | IOException | NumberFormatException e) {
+            System.out.println("Wrong number");
             System.out.println(e.getMessage());
         }
 
