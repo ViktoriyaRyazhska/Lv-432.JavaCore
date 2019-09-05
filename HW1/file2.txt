@@ -1,0 +1,4 @@
+number of lines in file1.txt = 5
+the longest line in file1.txt = My birthday is 21.02.1976.
+My name is Vitaliy.
+My birthday is 21.02.1976.
