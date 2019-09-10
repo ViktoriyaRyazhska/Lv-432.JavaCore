@@ -12,7 +12,7 @@ public class MyThreadTask3 extends Thread {
 	}
 	public MyThreadTask3(Thread thread) {		
 		this.thread = thread;
-		//thread.start();
+		
 	}
 
 	public MyThreadTask3(String messege, int messengTimes, Thread thread) {		
@@ -27,11 +27,11 @@ public class MyThreadTask3 extends Thread {
 			System.out.println(messege);
 			
 		}
-		try {
-			thread.start();
-		} catch (NullPointerException e) {
-			System.out.println(e.getMessage());
-		}
+		
+			if (thread != null) {				
+				thread.start();
+			}
+		
 		System.out.println(Thread.currentThread().getName()+" end thread...");
 	}
 	public Thread getThread() {

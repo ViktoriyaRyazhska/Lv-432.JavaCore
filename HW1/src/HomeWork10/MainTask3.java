@@ -5,8 +5,8 @@ package HomeWork10;
 public class MainTask3 {
 
 	public static void main(String[] args) {
-		Thread three = new Thread(new MyThreadTask3("Thread number three", 5));
-		Thread two = new Thread(new MyThreadTask3("Thread number two", 3, three));	
+		Thread three = new Thread(new MyThreadTask3("Thread number three", 15));
+		Thread two = new Thread(new MyThreadTask3("Thread number two", 10, three));	
 		Thread one = new MyThreadTask3("Thread number one",2,two);
 		one.start();
 		
