@@ -1,4 +1,4 @@
-package ua.com.softserve;
+package com.company;
 
 import java.util.Scanner;
 

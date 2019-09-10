@@ -1,4 +1,4 @@
-package TaskForMy;
+package com.company;
 /**
  * 5.	Input string and check if this string is palindrome (e.g. “ABCCBA”)
  * @author 999

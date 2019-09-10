@@ -1,4 +1,5 @@
-public class Task_10 {
+package com.company;
+public class Task10 {
 
 
     public void findOne(int randomNumber) {
@@ -15,3 +16,4 @@ public class Task_10 {
         } while (randomNumber != 1);
         System.out.println(count);
     }
+}
