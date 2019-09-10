@@ -3,15 +3,8 @@ package com.company;
 import java.util.Arrays;
 
 public class Task2 {
-    public static void main(String[] args) {
 
-
-        Task2 task2 = new Task2();
-
-        System.out.println(Arrays.toString(task2.degrees(100)));
-    }
-
-    public int[] degrees(int n) {
+    public void degrees(int n) {
         int[] numbers = new int[5];
         numbers[0] = 2;
         numbers[1] = 3;
@@ -30,6 +23,7 @@ public class Task2 {
                 break;
             }
         }
-        return a;
+
+        System.out.println(Arrays.toString(numbers));
     }
 }

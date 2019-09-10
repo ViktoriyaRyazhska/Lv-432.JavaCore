@@ -36,7 +36,8 @@ public class TaskEight {
 		return num[number] + "hundred" + current;
 	}
 
-	public static String convert(Scanner sc) {
+	public static String convert() {
+		Scanner sc = new Scanner(System.in);
 		int number = 0;
 		System.out.println("Enter number");
 		number = sc.nextInt();

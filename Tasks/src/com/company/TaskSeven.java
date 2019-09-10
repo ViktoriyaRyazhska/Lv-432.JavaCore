@@ -4,16 +4,9 @@ import java.util.Scanner;
 
 public class TaskSeven {
 
-	public static int qestion() {
-		int enteredNumber = 0;
-		Scanner scanner = new Scanner(System.in);
-		System.out.println("Enter quantity of fibonachi");
-		enteredNumber = scanner.nextInt();
-		scanner.close();
-		return enteredNumber;
-	}
 
-	public static void divideNumbers(Scanner scanner) {
+	public static void divideNumbers() {
+		Scanner scanner = new Scanner(System.in);
 		int enteredNumber = 0;
 		System.out.println("Enter number");
 		enteredNumber = scanner.nextInt();

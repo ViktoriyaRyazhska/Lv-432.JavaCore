@@ -3,10 +3,10 @@ package com.company;
 import java.util.Arrays;
 
 public class Task14 {
-    private int S[] = new int[]{1, 2, 5, 10, 20, 50, 100, 200};
+    private static int S[] = new int[]{1, 2, 5, 10, 20, 50, 100, 200};
 
 
-    private long countWays(int n) {
+    private static long countWays(int n) {
         int m = S.length;
         long[] table = new long[n + 1];
 
@@ -26,7 +26,7 @@ public class Task14 {
         return table[n];
     }
 
-    public void execute() {
+    public static void execute() {
         System.out.println(countWays( 4));
     }
 }

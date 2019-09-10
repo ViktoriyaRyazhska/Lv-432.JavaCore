@@ -30,9 +30,9 @@ public class Task11 {
     }
 
 
-    public void execute(Scanner scanner) {
+    public static void execute() {
         System.out.println("Enter credit card number");
-        String card = scanner.nextLine();
+        String card = new Scanner(System.in).nextLine();
         validateCreditCardNumber(card);
     }
 

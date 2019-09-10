@@ -3,8 +3,7 @@ package com.company;
 import java.util.Scanner;
 
 public class Task4 {
-    public static void main(String[] args) {
-
+    public void execute() {
         Scanner stdin = new Scanner(System.in);
         String string;
         System.out.println("Enter a string");
