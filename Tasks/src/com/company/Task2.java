@@ -5,6 +5,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class Task2 {
+<<<<<<< HEAD
     public static void main(String[] args) throws IOException {
         Scanner sc = new Scanner(System.in);
 
@@ -16,6 +17,10 @@ public class Task2 {
     }
 
     public int[] degrees(int n) {
+=======
+
+    public void degrees(int n) {
+>>>>>>> 269808dd46307d303ee36f054c10267d573678c6
         int[] numbers = new int[5];
         numbers[0] = 2;
         numbers[1] = 3;
@@ -34,6 +39,7 @@ public class Task2 {
                 break;
             }
         }
-        return a;
+
+        System.out.println(Arrays.toString(numbers));
     }
 }

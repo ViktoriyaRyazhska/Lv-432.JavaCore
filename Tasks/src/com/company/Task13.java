@@ -5,7 +5,7 @@ import java.util.Collections;
 import java.util.List;
 
 public class Task13 {
-    private List<Integer> generatePrimes(int upperLimit){
+    private static List<Integer> generatePrimes(int upperLimit){
         List<Integer> primes = new ArrayList<>();
         boolean isPrime;
         int j;
@@ -30,7 +30,7 @@ public class Task13 {
         return primes;
     }
 
-    public void execute() {
+    public  static void execute() {
         int divisorMax = 20;
         List<Integer> p = generatePrimes(divisorMax);
         int result = 1;
